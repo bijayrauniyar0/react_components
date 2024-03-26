@@ -10,6 +10,7 @@ const Nav = () => {
   return (
     <>
     <nav>
+        <h3>Loop Verse</h3>
         <ul className='main-ul'>
             <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
@@ -20,6 +21,7 @@ const Nav = () => {
         <div className="toggler">
             <span id="toggled" onClick={toggled}><i class="fa-solid fa-bars"></i></span> 
         </div>
+        {/* drop menu */}
         <div className={`drop-menu ${toggle ?"active":""}`}>
             <ul>
                 <li><a href="">Home</a></li>
