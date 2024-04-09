@@ -1,0 +1,52 @@
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(0, 217, 255);
+    transition: .2s ease-in-out;
+}
+
+#toggle{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#toggle i{
+    font-size: 1.6rem;
+}
+.sideMenu{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sideMenu a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0 5px 5px ;
+    padding: 15px 10px;
+    font-size: 1.6rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sideMenu a:hover{
+    background-color: rgb(6, 149, 211);
+}
+.sideMenu a .side-group i{
+  margin: 0 20px ;
+  transition: .2s ease-in-out;
+}
+/* when sidebar is closed */
+.sidebar.active{
+    width: 80px;
+}
+.sidebar.active .sideMenu a .side-group .text{
+    display: none;
+}
+.sidebar.active .sideMenu a .side-group i{
+    font-size: 2rem;
+}
+.sidebar.active .sideMenu a{
+    padding: 15px 0;
+    margin: 5px 0;
+}

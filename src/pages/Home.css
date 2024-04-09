@@ -1,0 +1,19 @@
+.main-home{
+    position: absolute;
+    left: 320px;
+    padding: 10px;
+    transition: .2s ease-in-out;
+}
+.main-home.active{
+    left: 100px;
+}
+
+.main-contact{
+    position: absolute;
+    left: 320px;
+    padding: 10px;
+    transition: .2s ease-in-out;
+}
+.main-contact.active{
+    left: 100px;
+}
